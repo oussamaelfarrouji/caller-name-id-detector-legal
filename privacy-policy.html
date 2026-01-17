@@ -1,66 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Caller Name ID Detector</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Caller Name ID Detector</title>
+  <meta name="description" content="Privacy Policy for Caller Name ID Detector iOS app." />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --card: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.10);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --subtle: rgba(255,255,255,0.55);
+      --link: rgba(120, 182, 255, 1);
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(0,0,0,0.35);
+      --max: 920px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(120,182,255,0.18), transparent 60%),
+                  radial-gradient(1200px 600px at 90% 10%, rgba(160,120,255,0.16), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 56px 20px 20px;
+      text-align: center;
+    }
+    .title {
+      font-size: 34px;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 16px 64px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      margin: 14px 0;
+      backdrop-filter: blur(10px);
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 10px 0; color: var(--muted); }
+    ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+    li { margin: 8px 0; }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--subtle);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .note {
+      color: var(--subtle);
+      font-size: 13px;
+      border-left: 3px solid rgba(120,182,255,0.6);
+      padding-left: 12px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      color: var(--subtle);
+      font-size: 12px;
+      padding: 18px 10px 40px;
+    }
+    code {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: rgba(255,255,255,0.85);
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
 
-<p>Last updated: January 2026</p>
+<header>
+  <h1 class="title">Privacy Policy</h1>
+  <p class="subtitle">Caller Name ID Detector (iOS)</p>
+  <div class="pill">Last updated: January 2026</div>
+</header>
 
-<p>
-Caller Name ID Detector ("we", "our", or "us") respects your privacy.
-This Privacy Policy explains how we collect, use, and protect your information when you use our iOS application.
-</p>
+<div class="wrap">
 
-<h2>Information We Collect</h2>
-<ul>
-  <li><strong>Phone Number:</strong> Used for user identification and caller lookup.</li>
-  <li><strong>User Name:</strong> Provided by the user during registration.</li>
-  <li><strong>Search Activity:</strong> Stored to improve app functionality and prevent abuse.</li>
-  <li><strong>Device Information:</strong> Non-personal data such as device type and iOS version.</li>
-</ul>
+  <div class="card">
+    <h2>Overview</h2>
+    <p>
+      Caller Name ID Detector (“we”, “our”, “us”) provides caller identification and number lookup functionality.
+      This Privacy Policy explains what information we collect, why we collect it, how it may be shared,
+      and the choices you have.
+    </p>
+    <p class="note">
+      If you have questions or want to request deletion of your data, contact us at
+      <a href="mailto:support@callernamedetector.app">support@callernamedetector.app</a>.
+    </p>
+  </div>
 
-<h2>How We Use Information</h2>
-<ul>
-  <li>Provide caller identification services</li>
-  <li>Enable subscription features</li>
-  <li>Send push notifications</li>
-  <li>Improve app performance and security</li>
-</ul>
+  <div class="grid">
+    <div class="card">
+      <h2>Information We Collect</h2>
+      <ul>
+        <li><strong>Account information:</strong> phone number and (optionally) name you provide during sign-in.</li>
+        <li><strong>Lookup activity:</strong> numbers searched, timestamps, and basic usage events (used for limits, fraud prevention, and app reliability).</li>
+        <li><strong>Device & diagnostics:</strong> device model, iOS version, crash logs, and performance data.</li>
+        <li><strong>Push notification tokens:</strong> device token needed to deliver notifications (if enabled).</li>
+      </ul>
+      <p class="note">
+        We do not intentionally collect sensitive personal data (such as health, precise location, or government IDs).
+      </p>
+    </div>
 
-<h2>Advertising</h2>
-<p>
-The app may display advertisements. Ads remain visible unless the user purchases an active subscription.
-</p>
+    <div class="card">
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>Provide caller lookup and results inside the app</li>
+        <li>Enforce free usage limits and subscription entitlements</li>
+        <li>Send app notifications you opted into (e.g., “a number was searched”)</li>
+        <li>Prevent abuse, spam, automated scraping, and fraud</li>
+        <li>Maintain security and improve stability/performance</li>
+      </ul>
+    </div>
+  </div>
 
-<h2>Subscriptions</h2>
-<p>
-Paid subscriptions automatically renew unless canceled by the user via Apple ID settings.
-</p>
+  <div class="card">
+    <h2>Advertising & Tracking</h2>
+    <p>
+      The app may display advertisements. Ads may remain visible unless you have an active subscription plan
+      that removes or reduces ads (if offered in the app).
+    </p>
+    <p>
+      If an ad provider uses tracking technologies, iOS may ask for permission (App Tracking Transparency).
+      If you decline, tracking for ads will be limited.
+    </p>
+  </div>
 
-<h2>Third-Party Services</h2>
-<p>
-We use third-party services such as Firebase, Apple In-App Purchases, and OneSignal for notifications.
-These services may collect data according to their own privacy policies.
-</p>
+  <div class="card">
+    <h2>Subscriptions & Payments (Apple)</h2>
+    <p>
+      Payments are processed by Apple. We do not receive your full payment card details.
+      Apple may share limited purchase information with us (for example, to validate your subscription status).
+    </p>
+    <p>
+      Subscriptions renew automatically unless canceled in your Apple ID subscription settings.
+    </p>
+  </div>
 
-<h2>Data Security</h2>
-<p>
-We implement reasonable security measures to protect your information.
-However, no system is 100% secure.
-</p>
+  <div class="card">
+    <h2>Third-Party Services</h2>
+    <p>
+      We may use third-party services to operate the app, for example:
+      <strong>Firebase</strong> (backend / analytics), <strong>OneSignal</strong> (push notifications),
+      and ad networks (advertising).
+    </p>
+    <p>
+      These providers may process information on our behalf. Their processing is governed by their own privacy policies.
+    </p>
+  </div>
 
-<h2>User Rights</h2>
-<p>
-Users may request data deletion by contacting us.
-</p>
+  <div class="card">
+    <h2>Sharing of Information</h2>
+    <p>We may share information in the following cases:</p>
+    <ul>
+      <li><strong>Service providers:</strong> vendors that help us run the app (hosting, analytics, notifications, ads).</li>
+      <li><strong>Legal requirements:</strong> if required by law, regulation, or valid legal process.</li>
+      <li><strong>Safety & security:</strong> to investigate fraud, abuse, or security incidents.</li>
+    </ul>
+    <p class="note">
+      We do not sell your personal information.
+    </p>
+  </div>
 
-<h2>Contact</h2>
-<p>
-Email: support@callernamedetector.app
-</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Data Retention</h2>
+      <p>
+        We keep information only as long as necessary to provide the service, comply with legal obligations,
+        resolve disputes, and enforce our agreements.
+      </p>
+      <p>
+        Some logs (like security or fraud signals) may be retained for longer periods to protect the service.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Your Choices & Controls</h2>
+      <ul>
+        <li><strong>Notifications:</strong> you can enable/disable push notifications in iOS Settings.</li>
+        <li><strong>Account/data deletion:</strong> request deletion by emailing us.</li>
+        <li><strong>Subscriptions:</strong> manage/cancel via Apple ID subscription settings.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Children’s Privacy</h2>
+    <p>
+      The app is not directed to children under 13, and we do not knowingly collect personal information from children.
+      If you believe a child provided information to us, contact us and we will take appropriate action.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>International Users</h2>
+    <p>
+      Your information may be processed in countries where our service providers operate. We take reasonable steps
+      to protect your information consistent with this policy and applicable law.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. We will update the “Last updated” date at the top.
+      Your continued use of the app after updates means you accept the updated policy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:support@callernamedetector.app">support@callernamedetector.app</a>
+    </p>
+    <p class="note">
+      Tip: Use a real inbox you control. Apple reviewers may test your contact email.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © <span id="y"></span> Caller Name ID Detector • Privacy Policy
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
